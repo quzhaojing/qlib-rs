@@ -1,0 +1,886 @@
+{
+  "sources": {
+    "C:\\Users\\andy\\.codex\\tmp\\qlib-model-oracle\\Lib\\site-packages\\tianshou\\policy\\base.py": "eda673137be68d7dde008bf1246ad9b7d6b3ea9f31879164cc098576573b0cc6",
+    "C:\\Users\\andy\\.codex\\tmp\\qlib-model-oracle\\Lib\\site-packages\\tianshou\\data\\batch.py": "033890c6f4855c4e3789f55e7bdf1dccc9b237e1fdf87de0370f6ec957d119c2"
+  },
+  "cases": [
+    {
+      "options": {},
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 5
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0,
+        "repeat": 0
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": null,
+        "repeat": 0
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": "bad",
+        "repeat": 0
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 1.5,
+        "repeat": 0
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": -1,
+        "repeat": -2
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": null
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": 1.0
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": 0.0
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": true
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 2,
+        "loss/clip": 2,
+        "loss/vf": 2,
+        "loss/ent": 2
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": true
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": false
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 0,
+        "loss/clip": 0,
+        "loss/vf": 0,
+        "loss/ent": 0
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": false,
+        "repeat": true
+      },
+      "missing_buffer": false,
+      "error": "AssertionError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": true,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 5,
+        "loss/clip": 5,
+        "loss/vf": 5,
+        "loss/ent": 5
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": true
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "batch_size": null,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "AssertionError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": -1,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "AssertionError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0.5,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "AssertionError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 1.0,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "batch_size": 2.5,
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "batch_size": "bad",
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": [],
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": {},
+        "repeat": 1
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": true,
+        "count": 5,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 5,
+        "repeat": 2
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 2,
+        "loss/clip": 2,
+        "loss/vf": 2,
+        "loss/ent": 2
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": true
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "batch_size": 5,
+        "repeat": 1,
+        "extra": "ignored"
+      },
+      "missing_buffer": false,
+      "error": null,
+      "lengths": {
+        "loss": 1,
+        "loss/clip": 1,
+        "loss/vf": 1,
+        "loss/ent": 1
+      },
+      "state": {
+        "updating": false,
+        "count": 5,
+        "learned": true
+      },
+      "permutation_consumed": true
+    },
+    {
+      "options": {
+        "sample_size": 9
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "buffer": null
+      },
+      "missing_buffer": false,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {},
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 5
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0,
+        "repeat": 0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": null,
+        "repeat": 0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": "bad",
+        "repeat": 0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 1.5,
+        "repeat": 0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": -1,
+        "repeat": -2
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": null
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": 1.0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": 0.0
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": true
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2,
+        "repeat": false
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": false,
+        "repeat": true
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": true,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": null,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": -1,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 0.5,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 1.0,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 2.5,
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": "bad",
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": [],
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": {},
+        "repeat": 1
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 5,
+        "repeat": 2
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "batch_size": 5,
+        "repeat": 1,
+        "extra": "ignored"
+      },
+      "missing_buffer": true,
+      "error": null,
+      "lengths": {},
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "sample_size": 9
+      },
+      "missing_buffer": true,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    },
+    {
+      "options": {
+        "buffer": null
+      },
+      "missing_buffer": true,
+      "error": "TypeError",
+      "lengths": null,
+      "state": {
+        "updating": false,
+        "count": 0,
+        "learned": false
+      },
+      "permutation_consumed": false
+    }
+  ]
+}

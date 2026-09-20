@@ -1,0 +1,18 @@
+[package]
+name = "checkpoint-format-probe"
+version = "0.0.0"
+edition = "2024"
+publish = false
+default-run = "checkpoint-format-probe"
+
+# Test-only dependency evaluation, deliberately separate from production workspace deps.
+[workspace]
+
+[dependencies]
+rustpython-format = { version = "=0.4.0", default-features = false, features = ["num-bigint"] }
+pyformat-rs = "=0.1.0"
+serde_json = "1"
+rustpython-literal = "=0.4.0"
+intl = { version = "=0.2.0", default-features = false, features = ["full"] }
+thousands = "=0.2.0"
+widestring = "=1.2.1"

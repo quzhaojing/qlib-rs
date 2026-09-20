@@ -1,0 +1,23 @@
+[package]
+name = "shmem"
+description = "Audited memory-mapped observation transport for qlib-rs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+crc32fast.workspace = true
+memmap2.workspace = true
+thiserror.workspace = true
+
+[lints.rust]
+# memmap2 requires callers to attest that the mapped file remains valid and is not
+# concurrently mutated without external synchronization. This crate is the sole
+# audited adapter; core continues to inherit the workspace-wide forbid rule.
+unsafe_code = "allow"
+
+[lints.clippy]
+all = "deny"
+pedantic = "deny"

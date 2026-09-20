@@ -1,0 +1,3105 @@
+{
+  "torch": "2.5.1+cpu",
+  "cases": [
+    {
+      "name": "torch.float32-1.0",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0.5961007475852966,
+            -0.7948009967803955
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.04967506229877472,
+            -0.02483753114938736,
+            0.09935012459754944
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float32-5.0",
+      "limit": 5,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            2.980503797531128,
+            -3.9740049839019775
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.2483753114938736,
+            -0.1241876557469368,
+            0.4967506229877472
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float32-100.0",
+      "limit": 100,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float32-0.0",
+      "limit": 0,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float32--2.0",
+      "limit": -2,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            -1.1922014951705933,
+            1.589601993560791
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            -0.09935012459754944,
+            0.04967506229877472,
+            -0.19870024919509888
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float32-zeros",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-absent",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        null
+      ]
+    },
+    {
+      "name": "torch.float32-empty",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-1.0",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0.5961007221971086,
+            -0.7948009629294782
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.04967506018309239,
+            -0.024837530091546194,
+            0.09935012036618478
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float64-5.0",
+      "limit": 5,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            2.9805036109855436,
+            -3.974004814647391
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.24837530091546195,
+            -0.12418765045773097,
+            0.4967506018309239
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float64-100.0",
+      "limit": 100,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float64-0.0",
+      "limit": 0,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float64--2.0",
+      "limit": -2,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            -1.1922014443942173,
+            1.5896019258589564
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            -0.09935012036618478,
+            0.04967506018309239,
+            -0.19870024073236955
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float64-zeros",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-absent",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        null
+      ]
+    },
+    {
+      "name": "torch.float64-empty",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ]
+    },
+    {
+      "name": "torch.float16-1.0",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0.59619140625,
+            -0.794921875
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.0496826171875,
+            -0.02484130859375,
+            0.099365234375
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float16-5.0",
+      "limit": 5,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            2.98046875,
+            -3.974609375
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.2484130859375,
+            -0.12420654296875,
+            0.496826171875
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float16-100.0",
+      "limit": 100,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float16-0.0",
+      "limit": 0,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float16--2.0",
+      "limit": -2,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            -1.1923828125,
+            1.58984375
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float16",
+          "values": [
+            -0.099365234375,
+            0.0496826171875,
+            -0.19873046875
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.float16-zeros",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "torch.float16-absent",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        null
+      ]
+    },
+    {
+      "name": "torch.float16-empty",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float16",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float16",
+          "values": []
+        }
+      ]
+    },
+    {
+      "name": "torch.bfloat16-1.0",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.59765625,
+            -0.796875
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.0498046875,
+            -0.02490234375,
+            0.099609375
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16-5.0",
+      "limit": 5,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            2.984375,
+            -3.984375
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.2490234375,
+            -0.12451171875,
+            0.498046875
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16-100.0",
+      "limit": 100,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16-0.0",
+      "limit": 0,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16--2.0",
+      "limit": -2,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          5.03125
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            -1.1953125,
+            1.59375
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            -0.099609375,
+            0.0498046875,
+            -0.19921875
+          ]
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        },
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16-zeros",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "torch.bfloat16-absent",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        null
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        null
+      ]
+    },
+    {
+      "name": "torch.bfloat16-empty",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "bfloat16",
+        "values": [
+          0
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "bfloat16",
+          "values": []
+        }
+      ]
+    },
+    {
+      "name": "(torch.float32, torch.float64)",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "values": [
+            0.5961006879806519,
+            -0.7948009371757507
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.04967506018309239,
+            -0.024837530091546194,
+            0.09935012036618478
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(torch.float64, torch.float32)",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705536265901
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "values": [
+            0.5961007220234024,
+            -0.7948009626978698
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.04967505857348442,
+            -0.02483752928674221,
+            0.09935011714696884
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(torch.float16, torch.bfloat16)",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032864570617676
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0.59619140625,
+            -0.794921875
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.049560546875,
+            -0.0247802734375,
+            0.09912109375
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(torch.bfloat16, torch.float32)",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float32",
+        "values": [
+          5.032705307006836
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "bfloat16",
+          "values": [
+            0.59765625,
+            -0.79296875
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            0.04967506229877472,
+            -0.02483753114938736,
+            0.09935012459754944
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(torch.float16, torch.float64)",
+      "limit": 1,
+      "parameters": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0,
+            0
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "before": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            3,
+            -4
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.25,
+            -0.125,
+            0.5
+          ]
+        }
+      ],
+      "norm": {
+        "shape": [],
+        "dtype": "float64",
+        "values": [
+          5.032705534799349
+        ]
+      },
+      "after": [
+        {
+          "shape": [
+            2
+          ],
+          "dtype": "float16",
+          "values": [
+            0.59619140625,
+            -0.794921875
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            0.04967506018309239,
+            -0.024837530091546194,
+            0.09935012036618478
+          ]
+        }
+      ]
+    }
+  ],
+  "special": [
+    {
+      "value": "nan",
+      "limit": "1.0",
+      "norm": "nan",
+      "after": [
+        "nan",
+        "nan"
+      ]
+    },
+    {
+      "value": "inf",
+      "limit": "1.0",
+      "norm": "inf",
+      "after": [
+        "nan",
+        "0.0"
+      ]
+    },
+    {
+      "value": "-inf",
+      "limit": "1.0",
+      "norm": "inf",
+      "after": [
+        "nan",
+        "0.0"
+      ]
+    },
+    {
+      "value": "3.0",
+      "limit": "nan",
+      "norm": "5.0",
+      "after": [
+        "nan",
+        "nan"
+      ]
+    },
+    {
+      "value": "3.0",
+      "limit": "inf",
+      "norm": "5.0",
+      "after": [
+        "3.0",
+        "4.0"
+      ]
+    },
+    {
+      "value": "3.0",
+      "limit": "-inf",
+      "norm": "5.0",
+      "after": [
+        "-inf",
+        "-inf"
+      ]
+    }
+  ]
+}

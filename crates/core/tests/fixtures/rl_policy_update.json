@@ -1,0 +1,297 @@
+{
+  "source_sha256": "eda673137be68d7dde008bf1246ad9b7d6b3ea9f31879164cc098576573b0cc6",
+  "cases": [
+    {
+      "failure": null,
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ],
+        [
+          "scheduler",
+          true
+        ]
+      ],
+      "updating": false,
+      "result": {
+        "loss": [
+          1
+        ]
+      },
+      "error": null
+    },
+    {
+      "failure": "sample",
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ]
+      ],
+      "updating": false,
+      "result": null,
+      "error": "sample"
+    },
+    {
+      "failure": "process",
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ],
+        [
+          "process",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "process"
+    },
+    {
+      "failure": "learn",
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "learn"
+    },
+    {
+      "failure": "post-process",
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "post-process"
+    },
+    {
+      "failure": "scheduler",
+      "initial": false,
+      "events": [
+        [
+          "sample",
+          false
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ],
+        [
+          "scheduler",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "scheduler"
+    },
+    {
+      "failure": "no-buffer",
+      "initial": false,
+      "events": [],
+      "updating": false,
+      "result": {},
+      "error": null
+    },
+    {
+      "failure": null,
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ],
+        [
+          "scheduler",
+          true
+        ]
+      ],
+      "updating": false,
+      "result": {
+        "loss": [
+          1
+        ]
+      },
+      "error": null
+    },
+    {
+      "failure": "sample",
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "sample"
+    },
+    {
+      "failure": "process",
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ],
+        [
+          "process",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "process"
+    },
+    {
+      "failure": "learn",
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "learn"
+    },
+    {
+      "failure": "post-process",
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "post-process"
+    },
+    {
+      "failure": "scheduler",
+      "initial": true,
+      "events": [
+        [
+          "sample",
+          true
+        ],
+        [
+          "process",
+          true
+        ],
+        [
+          "learn",
+          true
+        ],
+        [
+          "post-process",
+          true
+        ],
+        [
+          "scheduler",
+          true
+        ]
+      ],
+      "updating": true,
+      "result": null,
+      "error": "scheduler"
+    },
+    {
+      "failure": "no-buffer",
+      "initial": true,
+      "events": [],
+      "updating": true,
+      "result": {},
+      "error": null
+    }
+  ]
+}

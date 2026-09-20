@@ -1,0 +1,32 @@
+[package]
+name = "path"
+description = "Audited native path queries for source-compatible configuration resolution"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+byteorder.workspace = true
+icu_casemap.workspace = true
+icu_locale_core.workspace = true
+thiserror.workspace = true
+widestring.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys.workspace = true
+libloading.workspace = true
+
+[dev-dependencies]
+cc.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+
+[lints.rust]
+# Only the narrow, documented Windows query adapter may call native FFI.
+unsafe_code = "allow"
+
+[lints.clippy]
+all = "deny"
+pedantic = "deny"

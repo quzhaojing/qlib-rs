@@ -1,0 +1,12 @@
+[package]
+name = "calendar-codec-probe"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# Isolated dependency evaluation; not a production decoder or workspace member.
+[workspace]
+
+[dependencies]
+encoding_rs = { version = "=0.8.35", default-features = false, features = ["alloc"] }
+serde_json = "1"

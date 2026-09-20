@@ -1,0 +1,2837 @@
+{
+  "torch": "2.5.1+cpu",
+  "cases": [
+    {
+      "name": "torch.float32-0.0-(3,)",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            -0.699999988079071,
+            -0.699999988079071,
+            -0.699999988079071
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071,
+                -0.699999988079071,
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071,
+                -0.699999988079071,
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -2,
+                -2,
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6909999847412109,
+                -0.6909999847412109,
+                -0.6909999847412109
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.4909694194793701,
+                1.4909694194793701,
+                1.4909694194793701
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6849694848060608,
+                -0.6849694848060608,
+                -0.6849694848060608
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.4909694194793701,
+                1.4909694194793701,
+                1.4909694194793701
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6849694848060608,
+                -0.6849694848060608,
+                -0.6849694848060608
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                4,
+                4,
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.4901177883148193,
+                1.4901177883148193,
+                1.4901177883148193
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.685649573802948,
+                -0.685649573802948,
+                -0.685649573802948
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-0.0-()",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [],
+          "dtype": "float32",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "shape": [],
+          "dtype": "float32",
+          "values": [
+            -0.699999988079071
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6909999847412109
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                0
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.4909694194793701
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6849694848060608
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.4909694194793701
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6849694848060608
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -1
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.4901177883148193
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.685649573802948
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-0.0-(0,)",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-0.2-(3,)",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "values": [
+            -0.699999988079071,
+            -0.699999988079071,
+            -0.699999988079071
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071,
+                -0.699999988079071,
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071,
+                -0.699999988079071,
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -2,
+                -2,
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165,
+                1.496999979019165,
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6909999847412109,
+                -0.6909999847412109,
+                -0.6909999847412109
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.4896196126937866,
+                1.4896196126937866,
+                1.4896196126937866
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6845501661300659,
+                -0.6845501661300659,
+                -0.6845501661300659
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.4896196126937866,
+                1.4896196126937866,
+                1.4896196126937866
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6845501661300659,
+                -0.6845501661300659,
+                -0.6845501661300659
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                4,
+                4,
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                1.488511085510254,
+                1.488511085510254,
+                1.488511085510254
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float32",
+              "values": [
+                -0.6851301789283752,
+                -0.6851301789283752,
+                -0.6851301789283752
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-0.2-()",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [],
+          "dtype": "float32",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "shape": [],
+          "dtype": "float32",
+          "values": [
+            -0.699999988079071
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.699999988079071
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.496999979019165
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6909999847412109
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                0
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.4896196126937866
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6845501661300659
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.4896196126937866
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6845501661300659
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -1
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                1.488511085510254
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float32",
+              "values": [
+                -0.6851301789283752
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float32-0.2-(0,)",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float32",
+          "values": []
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float32",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.0-(3,)",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            -0.7,
+            -0.7,
+            -0.7
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999,
+                1.4970000000299999,
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.7,
+                -0.7,
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999,
+                1.4970000000299999,
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.7,
+                -0.7,
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -2,
+                -2,
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999,
+                1.4970000000299999,
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.691000000045,
+                -0.691000000045,
+                -0.691000000045
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.490969475828077,
+                1.490969475828077,
+                1.490969475828077
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.684969475800424,
+                -0.684969475800424,
+                -0.684969475800424
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.490969475828077,
+                1.490969475828077,
+                1.490969475828077
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.684969475800424,
+                -0.684969475800424,
+                -0.684969475800424
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                4,
+                4,
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4901178080920123,
+                1.4901178080920123,
+                1.4901178080920123
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.6856495447385689,
+                -0.6856495447385689,
+                -0.6856495447385689
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.0-()",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [],
+          "dtype": "float64",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "shape": [],
+          "dtype": "float64",
+          "values": [
+            -0.7
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4970000000299999
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.691000000045
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                0
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.490969475828077
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.684969475800424
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.490969475828077
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.684969475800424
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -1
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4901178080920123
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.6856495447385689
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.0-(0,)",
+      "decay": 0,
+      "initial": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.2-(3,)",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "values": [
+            -0.7,
+            -0.7,
+            -0.7
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077,
+                1.497000000023077,
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.7,
+                -0.7,
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077,
+                1.497000000023077,
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.7,
+                -0.7,
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -2,
+                -2,
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077,
+                1.497000000023077,
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.6910000000420561,
+                -0.6910000000420561,
+                -0.6910000000420561
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4896196744466967,
+                1.4896196744466967,
+                1.4896196744466967
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.6845502048238779,
+                -0.6845502048238779,
+                -0.6845502048238779
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4896196744466967,
+                1.4896196744466967,
+                1.4896196744466967
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.6845502048238779,
+                -0.6845502048238779,
+                -0.6845502048238779
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                4,
+                4,
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                1.4885111836201421,
+                1.4885111836201421,
+                1.4885111836201421
+              ]
+            },
+            {
+              "shape": [
+                3
+              ],
+              "dtype": "float64",
+              "values": [
+                -0.6851301991588696,
+                -0.6851301991588696,
+                -0.6851301991588696
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.2-()",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [],
+          "dtype": "float64",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "shape": [],
+          "dtype": "float64",
+          "values": [
+            -0.7
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.7
+              ]
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -2
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.497000000023077
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.6910000000420561
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                0
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                0
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4896196744466967
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.6845502048238779
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                3
+              ]
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4896196744466967
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.6845502048238779
+              ]
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -1
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                4
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                1.4885111836201421
+              ]
+            },
+            {
+              "shape": [],
+              "dtype": "float64",
+              "values": [
+                -0.6851301991588696
+              ]
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    },
+    {
+      "name": "torch.float64-0.2-(0,)",
+      "decay": 0.2,
+      "initial": [
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        },
+        {
+          "shape": [
+            0
+          ],
+          "dtype": "float64",
+          "values": []
+        }
+      ],
+      "steps": [
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.003,
+          "gradients": [
+            null,
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 1
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            null,
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.009,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            null
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        },
+        {
+          "learning_rate": 0.002,
+          "gradients": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "parameters": [
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            },
+            {
+              "shape": [
+                0
+              ],
+              "dtype": "float64",
+              "values": []
+            }
+          ],
+          "initialized": 2
+        }
+      ]
+    }
+  ]
+}

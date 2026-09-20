@@ -1,0 +1,3308 @@
+{
+  "tianshou": "0.4.10",
+  "source_sha256": "eda673137be68d7dde008bf1246ad9b7d6b3ea9f31879164cc098576573b0cc6",
+  "cases": [
+    {
+      "name": "<class 'numpy.float32'>-16-False-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "-0.19999999999999998",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.19999999999999998",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-False-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-False-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355",
+        "0.18000000715255737",
+        "0.25",
+        "0.3199999928474426"
+      ],
+      "returns": [
+        "-0.17000000067055224",
+        "-0.3",
+        "1.0900000005960464",
+        "0.0",
+        "-0.35",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.06999999918043612",
+        "-0.27000000067055224",
+        "1.050000001490116",
+        "-0.10999999940395355",
+        "-0.5300000071525574",
+        "-0.95",
+        "-0.11999999284744262"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-False-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355",
+        "0.18000000715255737",
+        "0.25",
+        "0.3199999928474426"
+      ],
+      "returns": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.20000000149011612",
+        "-0.27000000067055224",
+        "1.1600000008940696",
+        "-0.10999999940395355",
+        "0.4199999928474426",
+        "-0.95",
+        "-0.11999999284744262"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": null,
+      "returns": [
+        "-0.20000000000000018",
+        "-0.30000000000000004",
+        "1.7899999737739563",
+        "0.5899999737739563",
+        "-0.09999999999999987",
+        "-0.7",
+        "1.1800000190734863"
+      ],
+      "advantages": [
+        "-1.1800000190734865",
+        "-0.5000000029802323",
+        "1.7899999737739563",
+        "0.12999996542930603",
+        "-0.6899999737739562",
+        "-1.4200000286102294",
+        "1.1800000190734863"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": null,
+      "returns": [
+        "0.09999999999999998",
+        "-0.30000000000000004",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.8800000190734864",
+        "-0.5000000029802323",
+        "1.2",
+        "-0.46000000834465027",
+        "0.010000026226043679",
+        "-1.4200000286102294",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-False-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": null,
+      "returns": [
+        "-0.14749999986588946",
+        "-0.30000000000000004",
+        "1.6747049801945686",
+        "0.5309999763965607",
+        "0.0339000012874604",
+        "-0.7",
+        "1.0820000171661377"
+      ],
+      "advantages": [
+        "-1.1275000189393758",
+        "-0.5000000029802323",
+        "1.6747049801945686",
+        "0.07099996805191044",
+        "-0.5560999724864959",
+        "-1.4200000286102294",
+        "1.0820000171661377"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355",
+        "0.18000000715255737",
+        "0.25",
+        "0.3199999928474426"
+      ],
+      "returns": [
+        "0.030000002309679974",
+        "-0.3",
+        "2.139999982714653",
+        "0.5899999737739563",
+        "0.3700000286102296",
+        "-0.7",
+        "1.1800000190734863"
+      ],
+      "advantages": [
+        "0.1300000037997961",
+        "-0.27000000067055224",
+        "2.099999983608723",
+        "0.47999997437000275",
+        "0.19000002145767225",
+        "-0.95",
+        "0.8600000262260437"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355",
+        "0.18000000715255737",
+        "0.25",
+        "0.3199999928474426"
+      ],
+      "returns": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.20000000149011612",
+        "-0.27000000067055224",
+        "1.1600000008940696",
+        "-0.10999999940395355",
+        "0.4199999928474426",
+        "-0.95",
+        "-0.11999999284744262"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-16-True-True-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563",
+        "0.7200000286102295",
+        "0.8500000238418579",
+        "0.9800000190734863"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355",
+        "0.18000000715255737",
+        "0.25",
+        "0.3199999928474426"
+      ],
+      "returns": [
+        "0.04915000210888687",
+        "-0.3",
+        "1.9739549878388645",
+        "0.5309999763965607",
+        "0.4357500257492066",
+        "-0.7",
+        "1.0820000171661377"
+      ],
+      "advantages": [
+        "0.149150003599003",
+        "-0.27000000067055224",
+        "1.9339549887329341",
+        "0.42099997699260716",
+        "0.25575001859664925",
+        "-0.95",
+        "0.7620000243186951"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-False-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-False-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-False-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355"
+      ],
+      "returns": [
+        "0.0",
+        "-0.1399999991059303",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.10000000149011612",
+        "-0.10999999977648256",
+        "-0.7399999991059303",
+        "0.09000000059604646"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-False-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355"
+      ],
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.10000000149011612",
+        "0.6299999993294477",
+        "-0.7399999991059303",
+        "0.09000000059604646"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": null,
+      "returns": [
+        "0.20000000298023224",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.7899999737739563"
+      ],
+      "advantages": [
+        "-0.38999997079372406",
+        "-0.3000000029802322",
+        "-1.0300000131130218",
+        "0.7899999737739563"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": null,
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.5899999737739563",
+        "0.39999999701976774",
+        "-1.0300000131130218",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-False-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": null,
+      "returns": [
+        "0.18000000268220906",
+        "0.016350000590085956",
+        "-0.7",
+        "0.7309999763965607"
+      ],
+      "advantages": [
+        "-0.40999997109174724",
+        "-0.18365000239014628",
+        "-1.0300000131130218",
+        "0.7309999763965607"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355"
+      ],
+      "returns": [
+        "0.20000000298023224",
+        "0.19000001400709154",
+        "-0.7",
+        "0.7899999737739563"
+      ],
+      "advantages": [
+        "0.30000000447034836",
+        "0.2200000133365393",
+        "-0.7399999991059303",
+        "0.6799999743700027"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355"
+      ],
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.10000000149011612",
+        "0.6299999993294477",
+        "-0.7399999991059303",
+        "0.09000000059604646"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float32'>-4-True-True-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.20000000298023224",
+        "0.33000001311302185",
+        "0.46000000834465027",
+        "0.5899999737739563"
+      ],
+      "values": [
+        "-0.10000000149011612",
+        "-0.029999999329447746",
+        "0.03999999910593033",
+        "0.10999999940395355"
+      ],
+      "returns": [
+        "0.18000000268220906",
+        "0.2643000125661492",
+        "-0.7",
+        "0.7309999763965607"
+      ],
+      "advantages": [
+        "0.2800000041723252",
+        "0.29430001189559696",
+        "-0.7399999991059303",
+        "0.6209999769926071"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-False-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "-0.19999999999999998",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.19999999999999998",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-False-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-False-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "-0.17",
+        "-0.30000000000000004",
+        "1.0899999999999999",
+        "0.0",
+        "-0.35",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.07",
+        "-0.27",
+        "1.0499999999999998",
+        "-0.11000000000000001",
+        "-0.53",
+        "-0.95",
+        "-0.12000000000000005"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-False-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "0.1",
+        "-0.30000000000000004",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.2",
+        "-0.27",
+        "1.16",
+        "-0.11000000000000001",
+        "0.41999999999999993",
+        "-0.95",
+        "-0.12000000000000005"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": null,
+      "returns": [
+        "-0.19999999999999996",
+        "-0.3",
+        "1.79",
+        "0.5900000000000001",
+        "-0.10000000000000009",
+        "-0.7",
+        "1.18"
+      ],
+      "advantages": [
+        "-1.18",
+        "-0.5",
+        "1.79",
+        "0.13000000000000006",
+        "-0.6900000000000002",
+        "-1.42",
+        "1.18"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": null,
+      "returns": [
+        "0.09999999999999998",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.88",
+        "-0.5",
+        "1.2",
+        "-0.46",
+        "0.009999999999999898",
+        "-1.42",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-False-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": null,
+      "returns": [
+        "-0.14749999999999996",
+        "-0.3",
+        "1.6747049999999999",
+        "0.5310000000000001",
+        "0.03390000000000004",
+        "-0.7",
+        "1.082"
+      ],
+      "advantages": [
+        "-1.1275",
+        "-0.5",
+        "1.6747049999999999",
+        "0.07100000000000012",
+        "-0.5561",
+        "-1.42",
+        "1.082"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "0.03",
+        "-0.30000000000000004",
+        "2.14",
+        "0.5900000000000001",
+        "0.37",
+        "-0.7",
+        "1.18"
+      ],
+      "advantages": [
+        "0.13",
+        "-0.27",
+        "2.1",
+        "0.4800000000000001",
+        "0.18999999999999995",
+        "-0.95",
+        "0.8599999999999999"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "0.1",
+        "-0.30000000000000004",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.2",
+        "-0.27",
+        "1.16",
+        "-0.11000000000000001",
+        "0.41999999999999993",
+        "-0.95",
+        "-0.12000000000000005"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-16-True-True-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "0.04915",
+        "-0.30000000000000004",
+        "1.9739550000000001",
+        "0.5310000000000001",
+        "0.4357500000000002",
+        "-0.7",
+        "1.082"
+      ],
+      "advantages": [
+        "0.14915",
+        "-0.27",
+        "1.933955",
+        "0.42100000000000015",
+        "0.25575000000000014",
+        "-0.95",
+        "0.762"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-False-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.0",
+        "-0.09999999999999998",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-False-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-False-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001"
+      ],
+      "returns": [
+        "0.0",
+        "-0.13999999999999999",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.1",
+        "-0.10999999999999999",
+        "-0.74",
+        "0.09"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-False-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": null,
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001"
+      ],
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.1",
+        "0.63",
+        "-0.74",
+        "0.09"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-False-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": null,
+      "returns": [
+        "0.2",
+        "-0.10000000000000003",
+        "-0.7",
+        "0.79"
+      ],
+      "advantages": [
+        "-0.39000000000000007",
+        "-0.30000000000000004",
+        "-1.03",
+        "0.79"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-False-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": null,
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.5900000000000001",
+        "0.39999999999999997",
+        "-1.03",
+        "0.2"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-False-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": null,
+      "returns": [
+        "0.18000000000000005",
+        "0.01635000000000003",
+        "-0.7",
+        "0.7310000000000001"
+      ],
+      "advantages": [
+        "-0.41000000000000003",
+        "-0.18364999999999998",
+        "-1.03",
+        "0.7310000000000001"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-True-1.0-1.0",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001"
+      ],
+      "returns": [
+        "0.20000000000000004",
+        "0.18999999999999997",
+        "-0.7",
+        "0.79"
+      ],
+      "advantages": [
+        "0.30000000000000004",
+        "0.21999999999999997",
+        "-0.74",
+        "0.68"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-True-0.0-1.0",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001"
+      ],
+      "returns": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "0.1",
+        "0.63",
+        "-0.74",
+        "0.09"
+      ]
+    },
+    {
+      "name": "<class 'numpy.float64'>-4-True-True-0.9-0.95",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001"
+      ],
+      "returns": [
+        "0.18000000000000002",
+        "0.2643000000000001",
+        "-0.7",
+        "0.7310000000000001"
+      ],
+      "advantages": [
+        "0.28",
+        "0.2943000000000001",
+        "-0.74",
+        "0.6210000000000001"
+      ]
+    },
+    {
+      "name": "empty-next",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [],
+      "terminated": [],
+      "truncated": [],
+      "bootstrap_valid": [],
+      "indices": [],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [],
+      "values": [],
+      "returns": [],
+      "advantages": []
+    },
+    {
+      "name": "empty-none",
+      "gamma": 1,
+      "gae_lambda": 1,
+      "rewards": [],
+      "terminated": [],
+      "truncated": [],
+      "bootstrap_valid": [],
+      "indices": [],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [],
+      "advantages": []
+    },
+    {
+      "name": "duplicate-indices",
+      "gamma": 0.9,
+      "gae_lambda": 0.95,
+      "rewards": [
+        "0.0",
+        "0.0",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        false,
+        false
+      ],
+      "truncated": [
+        true,
+        true,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        true,
+        true
+      ],
+      "indices": [
+        3,
+        3,
+        2
+      ],
+      "unfinished_indices": [
+        2
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001"
+      ],
+      "returns": [
+        "0.18000000000000002",
+        "0.29700000000000004",
+        "0.6140000000000001"
+      ],
+      "advantages": [
+        "0.28",
+        "0.32700000000000007",
+        "0.5740000000000001"
+      ]
+    },
+    {
+      "name": "lambda-close-one",
+      "gamma": 1,
+      "gae_lambda": 1.000001,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": null,
+      "values": null,
+      "returns": [
+        "-0.20000029999999994",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.10000069999999994",
+        "-0.7",
+        "0.2"
+      ],
+      "advantages": [
+        "-0.20000029999999994",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "-0.10000069999999994",
+        "-0.7",
+        "0.2"
+      ]
+    },
+    {
+      "name": "negative-discount",
+      "gamma": -0.5,
+      "gae_lambda": 1.2,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "0.2"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "0.162",
+        "-0.30000000000000004",
+        "1.213",
+        "-0.29500000000000004",
+        "0.8099999999999999",
+        "-0.7",
+        "-0.29000000000000004"
+      ],
+      "advantages": [
+        "0.262",
+        "-0.27",
+        "1.173",
+        "-0.405",
+        "0.6299999999999999",
+        "-0.95",
+        "-0.6100000000000001"
+      ]
+    },
+    {
+      "name": "nonfinite-nan",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "nan"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan"
+      ],
+      "advantages": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan"
+      ]
+    },
+    {
+      "name": "nonfinite-inf",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "inf"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "inf"
+      ],
+      "advantages": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "inf"
+      ]
+    },
+    {
+      "name": "nonfinite--inf",
+      "gamma": 0,
+      "gae_lambda": 1,
+      "rewards": [
+        "0.1",
+        "-0.3",
+        "1.2",
+        "0.0",
+        "0.6",
+        "-0.7",
+        "-inf"
+      ],
+      "terminated": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "truncated": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "bootstrap_valid": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unfinished_indices": [
+        6
+      ],
+      "next_values": [
+        "0.2",
+        "0.33",
+        "0.46",
+        "0.5900000000000001",
+        "0.72",
+        "0.8500000000000001",
+        "0.98"
+      ],
+      "values": [
+        "-0.1",
+        "-0.03",
+        "0.04000000000000001",
+        "0.11000000000000001",
+        "0.18000000000000002",
+        "0.25",
+        "0.32000000000000006"
+      ],
+      "returns": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "-inf"
+      ],
+      "advantages": [
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "nan",
+        "-inf"
+      ]
+    }
+  ]
+}
