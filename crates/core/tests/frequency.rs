@@ -154,7 +154,7 @@ fn fixed_time_delta_matches_pandas_supported_spellings_and_errors() {
         );
     }
 
-    for unit in ["week", "month", "mon", "hour"] {
+    for unit in ["week", "month", "mon"] {
         assert_eq!(
             Frequency::time_delta(BigInt::from(1), unit),
             Err(FrequencyError::UnsupportedDurationUnit {
@@ -283,4 +283,25 @@ print(json.dumps({"parsed": parsed, "invalid": invalid, "deltas": deltas, "recen
         ]
     });
     assert_eq!(actual, expected);
+}
+#[test]
+fn caller_owned_range_errors_retain_unknown_unit_diagnostics() {
+    // The public error carries owned metadata and may also be constructed by a
+    // caller. Formatting must not panic or replace an unrecognized unit label.
+    let error = FrequencyError::DurationOutOfRange {
+        count: BigInt::from(-123),
+        unit: "custom-unit".to_owned(),
+    };
+    assert_eq!(
+        error.to_string(),
+        "cannot convert input 123.0 with the unit 'custom-unit'"
+    );
+    assert_eq!(error.python_exception_name(), "OutOfBoundsDatetime");
+    assert_eq!(
+        error,
+        FrequencyError::DurationOutOfRange {
+            count: BigInt::from(-123),
+            unit: "custom-unit".to_owned(),
+        }
+    );
 }

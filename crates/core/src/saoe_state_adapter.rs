@@ -12,9 +12,11 @@ use num_traits::ToPrimitive;
 use thiserror::Error;
 
 use crate::{
-    Order, OrderDir, OrderError, Region, SaoeBacktestData, SaoeMetrics, SaoeNumeric,
-    SaoePluginError, SaoeState, SaoeStateParts, SaoeStateProvider, SaoeTime, SharedOrderExecution,
-    regular_minute_calendar,
+    Frequency, FrequencyUnit, Order, OrderDir, OrderError, Region, SaoeBacktestData, SaoeMetrics,
+    SaoeNumeric, SaoePluginError, SaoeState, SaoeStateParts, SaoeStateProvider, SaoeTime,
+    SharedOrderExecution,
+    time_calendar_cache::default_time_calendar_cache,
+    time_compat::{TimeCompatError, day_minute_index_range_with_cache, python_clock_precision},
 };
 
 const EPS: f64 = 1.0e-8;
@@ -122,6 +124,8 @@ impl SaoeMetricRow {
 /// Typed failures from the concrete state calculations.
 #[derive(Debug, Error)]
 pub enum SaoeAdapterError {
+    #[error(transparent)]
+    TimeCompatibility(#[from] TimeCompatError),
     #[error("SAOE adapter order lock poisoned")]
     AdapterOrderPoisoned,
     #[error(transparent)]
@@ -676,6 +680,11 @@ impl ConcreteSaoeStateAdapter {
     ///
     /// # Errors
     /// Returns invalid ranges, execution timestamps, vector shapes, or plugin failures.
+    ///
+    /// # Panics
+    ///
+    /// Panics if a prior Rust panic poisoned the shared calendar-cache state, or
+    /// if range indexing violates its nonnegative, representable list-index invariant.
     #[allow(clippy::too_many_lines)]
     pub fn update_executions(
         &mut self,
@@ -693,11 +702,10 @@ impl ConcreteSaoeStateAdapter {
         let end_time = ticks_index[end_index];
         let expected = end_index - start_index + 1;
         let mut execution_volume = Array1::zeros(expected);
-        let sampled_minutes: Vec<_> = regular_minute_calendar(Region::Cn)
-            .iter()
-            .step_by(self.config.data_granularity)
-            .copied()
-            .collect();
+        let frequency = Frequency {
+            count: self.config.data_granularity.into(),
+            unit: FrequencyUnit::Minute,
+        };
         for execution in executions {
             let live_order = execution
                 .order
@@ -706,16 +714,19 @@ impl ConcreteSaoeStateAdapter {
             let execution_start = live_order
                 .start_time()
                 .ok_or(OrderError::MissingStartTime)?;
-            let _execution_end = live_order
+            let execution_end = live_order
                 .end_time()
                 .ok_or(SaoeAdapterError::MissingEndTime)?;
-            let mut index = 0_usize;
-            for minute in &sampled_minutes {
-                if *minute >= execution_start.time() {
-                    break;
-                }
-                index += 1;
-            }
+            let (index, _) = day_minute_index_range_with_cache(
+                python_clock_precision(execution_start.time()),
+                python_clock_precision(execution_end.time()),
+                &frequency,
+                Region::Cn.code(),
+                default_time_calendar_cache(),
+            )?;
+            let index = index
+                .to_usize()
+                .expect("bisect-left returns a nonnegative list index");
             if index < start_index || index > end_index {
                 return Err(SaoeAdapterError::ExecutionOutsideStep {
                     index,

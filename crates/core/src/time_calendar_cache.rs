@@ -7,7 +7,7 @@
 
 use std::{
     num::NonZeroUsize,
-    sync::{Arc, Mutex, MutexGuard},
+    sync::{Arc, LazyLock, Mutex, MutexGuard},
 };
 
 use chrono::NaiveTime;
@@ -19,6 +19,16 @@ use crate::{MarketCalendarError, Region, minute_calendar};
 
 /// The fixed `maxsize` declared by the Python `functools.lru_cache` decorator.
 pub const TIME_CALENDAR_CACHE_MAXSIZE: usize = 240;
+
+/// Process-wide source cache used by the default typed time compatibility entry points.
+///
+/// Explicit caches remain available for independent runtime contexts. Mutations made through
+/// this cache are observable by subsequent default compatibility calls with the same raw key.
+#[must_use]
+pub fn default_time_calendar_cache() -> &'static TimeCalendarCache {
+    static CACHE: LazyLock<TimeCalendarCache> = LazyLock::new(TimeCalendarCache::new);
+    &CACHE
+}
 
 /// A dynamically typed value supported by the narrow `get_min_cal` call binder.
 ///

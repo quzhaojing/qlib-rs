@@ -1,8 +1,13 @@
 import ast
+import bisect
+import functools
 import json
 import math
+import re
 import sys
 import warnings
+from datetime import datetime, time, timedelta
+from pathlib import Path
 from types import SimpleNamespace
 from typing import TypedDict, cast
 
@@ -55,9 +60,21 @@ def get_start_end_idx(calendar, decision):
     return 0, 5
 
 
-def get_day_min_idx_range(start, end, frequency, region):
-    base = pd.Timestamp("2024-01-02 09:30:00")
-    return int((pd.Timestamp(start) - base).total_seconds() // 60), int((pd.Timestamp(end) - base).total_seconds() // 60)
+time_path = Path(strategy_path).parents[2] / "utils" / "time.py"
+time_tree = ast.parse(time_path.read_text(encoding="utf-8"), filename=str(time_path))
+time_names = {"CN_TIME", "US_TIME", "TW_TIME", "Freq", "get_min_cal", "get_day_min_idx_range"}
+time_body = [node for node in time_tree.body if (
+    isinstance(node, (ast.FunctionDef, ast.ClassDef)) and node.name in time_names
+) or (
+    isinstance(node, ast.Assign) and any(isinstance(target, ast.Name) and target.id in time_names for target in node.targets)
+)]
+time_namespace = {
+    "bisect": bisect, "functools": functools, "datetime": datetime, "time": time,
+    "timedelta": timedelta, "pd": pd, "re": re, "Tuple": tuple,
+    "C": SimpleNamespace(min_data_shift=0), "REG_CN": "cn", "REG_US": "us", "REG_TW": "tw",
+}
+exec(compile(ast.fix_missing_locations(ast.Module(body=time_body, type_ignores=[])), str(time_path), "exec"), time_namespace)
+get_day_min_idx_range = time_namespace["get_day_min_idx_range"]
 
 
 namespace = {
@@ -215,6 +232,26 @@ record("empty")
 adapter.generate_metrics_after_done()
 record("done")
 
+nanosecond_adapter = Adapter(Order(), object(), Executor(), Exchange(), 2, Backtest(), 1)
+nanosecond_adapter.update([
+    (Order(start=ticks[0] + pd.Timedelta(1, "ns"), end=ticks[0], deal_amount=2.0), 0, 0, 0),
+], (0, 1))
+nanosecond_exec = nanosecond_adapter.history_exec["deal_amount"].tolist()
+
+cached_calendar = time_namespace["get_min_cal"](region="cn")
+original_calendar = list(cached_calendar)
+calendar_mutation_exec = {}
+for label, replacement in [("remove_open", original_calendar[1:]), ("empty", [])]:
+    try:
+        cached_calendar[:] = replacement
+        mutated_adapter = Adapter(Order(), object(), Executor(), Exchange(), 2, Backtest(), 1)
+        mutated_adapter.update([
+            (Order(start=ticks[1], end=ticks[1], deal_amount=2.0), 0, 0, 0),
+        ], (0, 1))
+        calendar_mutation_exec[label] = mutated_adapter.history_exec["deal_amount"].tolist()
+    finally:
+        cached_calendar[:] = original_calendar
+
 price_advantage = namespace["price_advantage"]
 edge_values = {
     "sell": price_advantage(15.0, 12.5, 0),
@@ -252,6 +289,8 @@ print(
                 "cur_step": Executor.trade_calendar.get_trade_step() - adapter.start_idx,
                 "twap_price": adapter.twap_price,
                 "edges": edge_values,
+                "nanosecond_exec": nanosecond_exec,
+                "calendar_mutation_exec": calendar_mutation_exec,
             }
         ),
         separators=(",", ":"),

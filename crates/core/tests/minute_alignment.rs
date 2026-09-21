@@ -16,6 +16,26 @@ fn iso(value: NaiveDateTime) -> String {
     value.format("%Y-%m-%dT%H:%M:%S%.f").to_string()
 }
 
+#[test]
+fn calendar_failure_precedes_zero_sampling_step() {
+    let shift = BigInt::from(10_u8).pow(100);
+    for region in [Region::Cn, Region::Us, Region::Tw] {
+        assert_eq!(
+            align_sampled_minute(
+                timestamp("2021-01-01 10:38:00"),
+                &BigInt::from(0),
+                &shift,
+                region,
+            ),
+            Err(MinuteAlignmentError::Calendar(
+                MarketCalendarError::ShiftOutOfRange {
+                    shift: shift.clone()
+                }
+            ))
+        );
+    }
+}
+
 fn align(text: &str, sample: i64, shift: i64, region: Region) -> NaiveDateTime {
     align_sampled_minute(
         timestamp(text),

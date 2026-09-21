@@ -172,6 +172,7 @@ pub mod time_series_aggregation;
 pub mod time_series_callable;
 pub mod time_series_resample;
 pub mod time_series_selection;
+pub mod timestamp_text;
 pub mod trade_decision;
 pub mod trade_decision_details;
 pub mod trade_decision_repr;

@@ -11,7 +11,7 @@ use crate::{MarketCalendarError, Region, minute_calendar};
 #[derive(Debug, Clone, PartialEq, Eq, Error)]
 pub enum MinuteAlignmentError {
     /// Python list slicing rejects a zero stride.
-    #[error("sample-minute step cannot be zero")]
+    #[error("slice step cannot be zero")]
     ZeroSamplingStep,
     /// The configured minute shift cannot be represented by the upstream calendar.
     #[error(transparent)]
@@ -36,27 +36,65 @@ pub fn align_sampled_minute(
     minute_shift: &BigInt,
     region: Region,
 ) -> Result<NaiveDateTime, MinuteAlignmentError> {
+    let sampled = sampled_minute_calendar(sample_minutes, minute_shift, region)?;
+    Ok(align_to_sampled_calendar(value, &sampled))
+}
+
+pub(crate) fn sampled_minute_calendar(
+    sample_minutes: &BigInt,
+    minute_shift: &BigInt,
+    region: Region,
+) -> Result<Vec<NaiveTime>, MinuteAlignmentError> {
+    // Python evaluates get_min_cal(...) before applying the sampling slice.
+    let calendar = minute_calendar(minute_shift, region)?;
+    sample_calendar(&calendar, sample_minutes)
+}
+
+pub(crate) fn sample_calendar(
+    calendar: &[NaiveTime],
+    sample_minutes: &BigInt,
+) -> Result<Vec<NaiveTime>, MinuteAlignmentError> {
     let direction = sample_minutes.sign();
     if direction == Sign::NoSign {
         return Err(MinuteAlignmentError::ZeroSamplingStep);
     }
     let step = sample_minutes.magnitude().to_usize().unwrap_or(usize::MAX);
-    let calendar = minute_calendar(minute_shift, region)?;
-    let sampled: Vec<NaiveTime> = if direction == Sign::Minus {
+    let sampled = if direction == Sign::Minus {
         calendar.iter().rev().step_by(step).copied().collect()
     } else {
         calendar.iter().step_by(step).copied().collect()
     };
-    let insertion = python_bisect_right(&sampled, value.time());
+    Ok(sampled)
+}
+
+pub(crate) fn align_to_sampled_calendar(
+    value: NaiveDateTime,
+    sampled: &[NaiveTime],
+) -> NaiveDateTime {
+    let insertion = python_bisect_right(sampled, value.time());
     let selected = if insertion == 0 {
         sampled.last().copied().unwrap_or(value.time())
     } else {
         sampled.get(insertion - 1).copied().unwrap_or(value.time())
     };
-    Ok(value.date().and_time(selected))
+    value.date().and_time(selected)
 }
 
-fn python_bisect_right(values: &[NaiveTime], needle: NaiveTime) -> usize {
+pub(crate) fn python_bisect_left(values: &[NaiveTime], needle: NaiveTime) -> usize {
+    let mut low = 0;
+    let mut high = values.len();
+    while low < high {
+        let middle = low + (high - low) / 2;
+        if values[middle] < needle {
+            low = middle + 1;
+        } else {
+            high = middle;
+        }
+    }
+    low
+}
+
+pub(crate) fn python_bisect_right(values: &[NaiveTime], needle: NaiveTime) -> usize {
     let mut low = 0;
     let mut high = values.len();
     while low < high {

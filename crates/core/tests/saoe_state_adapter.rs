@@ -263,7 +263,7 @@ impl SaoePolicy for FailingPolicy {
 }
 
 fn python_contract() -> Value {
-    let output = Command::new("python")
+    let output = Command::new(std::env::var_os("PYTHON").unwrap_or_else(|| "python".into()))
         .args([
             "-W",
             "ignore",
@@ -289,6 +289,144 @@ fn close(actual: f64, expected: f64) {
         (actual - expected).abs() <= 1.0e-9 * expected.abs().max(1.0),
         "{actual} != {expected}"
     );
+}
+
+#[test]
+fn shared_calendar_mutation_and_poison_reach_execution_without_partial_commit() {
+    use domain_core::{
+        time_calendar_cache::{TimeCalendarCall, TimeCalendarKeyword, default_time_calendar_cache},
+        time_compat::TimeCompatError,
+    };
+    // Isolate the process-wide cache from concurrently running adapter tests;
+    // production code is identical in the child, including its shared cache.
+    const CHILD: &str = "QLIB_SAOE_CALENDAR_TEST_CHILD";
+    if std::env::var_os(CHILD).is_none() {
+        let output = Command::new(std::env::current_exe().unwrap())
+            .args([
+                "--exact",
+                "shared_calendar_mutation_and_poison_reach_execution_without_partial_commit",
+                "--nocapture",
+            ])
+            .env(CHILD, "1")
+            .output()
+            .unwrap();
+        assert!(
+            output.status.success(),
+            "child stdout={}\nstderr={}",
+            String::from_utf8_lossy(&output.stdout),
+            String::from_utf8_lossy(&output.stderr)
+        );
+        return;
+    }
+    let expected = python_contract();
+    let cache = default_time_calendar_cache();
+    for label in ["remove_open", "empty"] {
+        cache.cache_clear();
+        let calendar = cache
+            .get(&TimeCalendarCall::new(
+                Vec::new(),
+                vec![TimeCalendarKeyword::new("region", "cn")],
+            ))
+            .unwrap();
+        if label == "remove_open" {
+            calendar.lock().unwrap().remove(0);
+        } else {
+            calendar.lock().unwrap().clear();
+        }
+        let market = Arc::new(Market::new([slice(&[100.0, 200.0], &[10.0, 12.0])]));
+        let mut adapter =
+            ConcreteSaoeStateAdapter::new(market, Arc::new(Context::new()), config()).unwrap();
+        adapter.reset_order(&order(OrderDir::Buy)).unwrap();
+        adapter
+            .update_executions(&[execution(1, 2.0)], (0, 1))
+            .unwrap();
+        let actual: Vec<_> = adapter
+            .history_exec()
+            .unwrap()
+            .iter()
+            .map(|row| row.deal_amount)
+            .collect();
+        assert_eq!(
+            serde_json::json!(actual),
+            expected["calendar_mutation_exec"][label]
+        );
+    }
+    cache.cache_clear();
+    let calendar = cache
+        .get(&TimeCalendarCall::new(
+            Vec::new(),
+            vec![TimeCalendarKeyword::new("region", "cn")],
+        ))
+        .unwrap();
+    assert!(
+        std::thread::spawn(move || {
+            let _guard = calendar.lock().unwrap();
+            panic!("test calendar value poison");
+        })
+        .join()
+        .is_err()
+    );
+    let market = Arc::new(Market::new([slice(&[100.0, 200.0], &[10.0, 12.0])]));
+    let context = Arc::new(Context::new());
+    let mut adapter =
+        ConcreteSaoeStateAdapter::new(market.clone(), context.clone(), config()).unwrap();
+    adapter.reset_order(&order(OrderDir::Buy)).unwrap();
+    let error = adapter
+        .update_executions(&[execution(0, 2.0)], (0, 1))
+        .unwrap_err();
+    assert!(matches!(
+        error,
+        SaoeAdapterError::TimeCompatibility(TimeCompatError::CalendarLockPoisoned)
+    ));
+    assert_eq!(
+        error.to_string(),
+        "mutable minute calendar lock is poisoned"
+    );
+    assert!(adapter.history_exec().unwrap().is_empty());
+    assert!(adapter.history_steps().unwrap().is_empty());
+    close(adapter.position(), 10.0);
+    assert_eq!(adapter.cur_time(), Some(time(0)));
+    assert_eq!(market.responses.lock().unwrap().len(), 1);
+    assert_eq!(context.0.lock().unwrap().warnings, 0);
+    cache.cache_clear();
+    adapter
+        .update_executions(&[execution(0, 2.0)], (0, 1))
+        .unwrap();
+    close(adapter.position(), 8.0);
+    assert_eq!(adapter.history_exec().unwrap().len(), 2);
+    assert!(market.responses.lock().unwrap().is_empty());
+}
+
+#[test]
+fn nanosecond_execution_uses_source_range_clock_precision() {
+    let expected = python_contract();
+    let market = Arc::new(Market::new([slice(&[100.0, 200.0], &[10.0, 12.0])]));
+    let mut adapter =
+        ConcreteSaoeStateAdapter::new(market, Arc::new(Context::new()), config()).unwrap();
+    adapter.reset_order(&order(OrderDir::Buy)).unwrap();
+    let mut fill = Order::new(
+        "A",
+        2.0,
+        OrderDir::Buy,
+        Some(time(0) + TimeDelta::nanoseconds(1)),
+        Some(time(0)),
+    );
+    fill.set_deal_amount(2.0);
+    let execution = OwnedOrderExecution {
+        order: fill,
+        trade_value: 0.0,
+        trade_cost: 0.0,
+        trade_price: 0.0,
+    }
+    .into_shared();
+    adapter.update_executions(&[execution], (0, 1)).unwrap();
+    let actual: Vec<_> = adapter
+        .history_exec()
+        .unwrap()
+        .iter()
+        .map(|row| row.deal_amount)
+        .collect();
+    assert_eq!(serde_json::json!(actual), expected["nanosecond_exec"]);
 }
 
 #[test]

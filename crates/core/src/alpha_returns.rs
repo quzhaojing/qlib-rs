@@ -223,9 +223,9 @@ pub struct AlphaReturns {
 pub enum AlphaLongShortReturn {
     /// The ordinary date-indexed long-short series.
     Series(AlphaReturnSeries),
-    /// The anomalous empty DataFrame returned when no non-missing group exists.
+    /// The anomalous empty `DataFrame` returned when no non-missing group exists.
     EmptyFrame {
-        /// Source DataFrame columns, in their observed order.
+        /// Source `DataFrame` columns, in their observed order.
         columns: [String; 2],
         /// Arrow dtypes of the empty source columns.
         column_types: [DataType; 2],
@@ -246,7 +246,7 @@ impl AlphaLongShortReturn {
         }
     }
 
-    /// Returns the empty DataFrame columns for the no-group source edge.
+    /// Returns the empty `DataFrame` columns for the no-group source edge.
     #[must_use]
     pub fn empty_frame_columns(&self) -> Option<&[String; 2]> {
         match self {
@@ -255,7 +255,7 @@ impl AlphaLongShortReturn {
         }
     }
 
-    /// Returns the empty DataFrame column dtypes for the no-group source edge.
+    /// Returns the empty `DataFrame` column dtypes for the no-group source edge.
     #[must_use]
     pub fn empty_frame_column_types(&self) -> Option<&[DataType; 2]> {
         match self {
@@ -264,7 +264,7 @@ impl AlphaLongShortReturn {
         }
     }
 
-    /// Returns the named grouping index for the empty DataFrame source edge.
+    /// Returns the named grouping index for the empty `DataFrame` source edge.
     #[must_use]
     pub fn empty_frame_index(&self) -> Option<(&str, &ArrayRef)> {
         match self {

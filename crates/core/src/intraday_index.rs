@@ -34,9 +34,52 @@ pub enum IntradayIndexError {
 ///
 /// Returns [`IntradayIndexError::InvalidTime`] for malformed or trailing input.
 pub fn parse_market_time(input: &str) -> Result<NaiveTime, IntradayIndexError> {
-    NaiveTime::parse_from_str(input, "%H:%M").map_err(|_| IntradayIndexError::InvalidTime {
-        input: input.to_owned(),
-    })
+    parse_python_market_clock_prefix(input)
+        .filter(|(_, remainder)| remainder.is_empty())
+        .map(|(clock, _)| clock)
+        .ok_or_else(|| IntradayIndexError::InvalidTime {
+            input: input.to_owned(),
+        })
+}
+
+pub(crate) fn parse_python_market_clock_prefix(input: &str) -> Option<(NaiveTime, &str)> {
+    use crate::rl_checkpoint_numeric::decimal_digit;
+
+    // Python's strptime uses ASCII ranges for the tens positions, but Unicode
+    // decimal digits for \d: H = 2[0-3]|[0-1]\d|\d| \d, M = [0-5]\d|\d.
+    // Normalizing all digits first would incorrectly accept, for example, ٢3.
+    let (hour, minute) = input.split_once(':')?;
+    let mut hour = hour.chars();
+    let hours = match (hour.next(), hour.next(), hour.next()) {
+        (Some(digit), None, None) | (Some(' '), Some(digit), None) => decimal_digit(digit)?,
+        (Some(prefix @ '0'..='1'), Some(digit), None) => {
+            (prefix as usize - '0' as usize) * 10 + decimal_digit(digit)?
+        }
+        (Some('2'), Some(digit @ '0'..='3'), None) => 20 + digit as usize - '0' as usize,
+        _ => return None,
+    };
+    // The minute regex greedily consumes at most two characters. An invalid
+    // second digit falls back to the one-digit alternative; strptime reports
+    // any remainder only after the entire pattern has matched.
+    let mut chars = minute.chars();
+    let first = chars.next()?;
+    let (minutes, consumed) = match (first, chars.next().and_then(decimal_digit)) {
+        (prefix @ '0'..='5', Some(digit)) => (
+            (prefix as usize - '0' as usize) * 10 + digit,
+            minute.len() - chars.as_str().len(),
+        ),
+        _ => (decimal_digit(first)?, first.len_utf8()),
+    };
+    // The grammar bounds hours to 0..=23 and minutes to 0..=59; the shared
+    // Unicode decimal helper returns only 0..=9. Conversion/construction cannot
+    // fail for a successfully parsed clock, unlike the input checks above.
+    let hours = hours.to_u32().expect("hour grammar bounds the value to 23");
+    let minutes = minutes
+        .to_u32()
+        .expect("minute grammar bounds the value to 59");
+    let clock = NaiveTime::from_hms_opt(hours, minutes, 0)
+        .expect("parsed clock is within the ordinary clock range");
+    Some((clock, &minute[consumed..]))
 }
 
 /// Return the zero-based minute index across a region's concatenated sessions.
