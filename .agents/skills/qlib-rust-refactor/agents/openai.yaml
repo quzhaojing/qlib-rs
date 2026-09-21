@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qlib Rust Refactor"
+  short_description: "Migrate Python Qlib to Rust module by module"
+  default_prompt: "Use $qlib-rust-refactor to migrate the next eligible Qlib module to Rust and verify compatibility."
